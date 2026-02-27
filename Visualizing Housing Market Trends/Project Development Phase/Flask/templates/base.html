@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Housing Market Trends</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<nav>
+    <h2>Housing Market Trends</h2>
+    <div>
+        <a href="/">Home</a>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/story">Story</a>
+        <a href="/about">About</a>
+    </div>
+</nav>
+
+<div class="overlay">
+{% block content %}{% endblock %}
+</div>
+
+</body>
+</html>
